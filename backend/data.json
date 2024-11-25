@@ -1,47 +1,58 @@
 {
-    "products" :[
-        {
-            "id": 1,
-            "name": "Wireless Headphones",
-            "category": "Electronics",
-            "price": 150.99,
-            "stock": 120,
-            "description": "Noise-canceling wireless headphones with 30-hour battery life.",
-            "image_url": "https://example.com/images/headphones.jpg",
-            "rating": 4.5
-          },
-          {
-            "id": 2,
-            "name": "Yoga Mat",
-            "category": "Fitness",
-            "price": 25.99,
-            "stock": 300,
-            "description": "Eco-friendly yoga mat with anti-slip texture.",
-            "image_url": "https://example.com/images/yoga_mat.jpg",
-            "rating": 4.8
-          },
-          {
-            "id": 3,
-            "name": "Ceramic Coffee Mug",
-            "category": "Kitchen",
-            "price": 12.49,
-            "stock": 200,
-            "description": "16 oz ceramic coffee mug with a stylish design.",
-            "image_url": "https://example.com/images/coffee_mug.jpg",
-            "rating": 4.2
-          },
-          {
-            "id": 4,
-            "name": "Mountain Bike",
-            "category": "Outdoor",
-            "price": 499.99,
-            "stock": 15,
-            "description": "Durable mountain bike with 21-speed gearing and shock absorbers.",
-            "image_url": "https://example.com/images/mountain_bike.jpg",
-            "rating": 4.7
-          }
-    ],
-    "shoppingBag":[
-      
-    ]
+  "conferences": [
+    {
+      "id": 1,
+      "name": "Tech Summit 2024",
+      "category": "Technology",
+      "location": "Stockholm, Sweden",
+      "date": "2024-05-12",
+      "duration": "3 days",
+      "price": 399.99,
+      "description": "A leading conference featuring the latest trends in technology, innovation, and AI.",
+      "image_url": "https://example.com/images/tech_summit.jpg",
+      "speakers": ["John Doe", "Jane Smith", "Ali Khan"],
+      "rating": 4.8
+    },
+    {
+      "id": 2,
+      "name": "Digital Marketing World",
+      "category": "Marketing",
+      "location": "Berlin, Germany",
+      "date": "2024-06-22",
+      "duration": "2 days",
+      "price": 299.99,
+      "description": "A comprehensive conference on the latest trends in digital marketing.",
+      "image_url": "https://example.com/images/marketing_world.jpg",
+      "speakers": ["Sophia Turner", "Carlos Martinez"],
+      "rating": 4.7
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "AI Hackathon",
+      "category": "Hackathon",
+      "location": "Online",
+      "date": "2024-03-15",
+      "duration": "24 hours",
+      "registration_fee": 0,
+      "description": "A virtual hackathon to solve real-world problems using AI.",
+      "image_url": "https://example.com/images/ai_hackathon.jpg",
+      "participants": 300,
+      "rating": 4.9
+    },
+    {
+      "id": 2,
+      "name": "Startup Pitch Night",
+      "category": "Startup",
+      "location": "San Francisco, USA",
+      "date": "2024-07-10",
+      "duration": "1 evening",
+      "registration_fee": 50.0,
+      "description": "An evening where startups pitch their ideas to investors and the public.",
+      "image_url": "https://example.com/images/startup_pitch.jpg",
+      "participants": 150,
+      "rating": 4.6
+    }
+  ]
 }

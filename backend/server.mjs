@@ -3,15 +3,15 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 
-import productRoutes from './routes/products-routes.mjs';
-import shoppingBagRoutes from './routes/shoppingBag-routes.mjs'
+import conferenceRoutes from './routes/conferences-routes.mjs';
+import eventsRoutes from './routes/events-routes.mjs'
 
 
 //steg2 
 dotenv.config();
 
 const PORT = process.env.PORT || 5001;
-const baseUrl= process.env.BASE_URL;
+// const baseUrl= process.env.BASE_URL;
 
 
 //steg3
@@ -19,8 +19,8 @@ const app = express();
 
 //steg4
 app.use(cors());
-app.use('/api/products', productRoutes);
-app.use('/api/shoppingBag', shoppingBagRoutes);
+app.use('/api/conferences', conferenceRoutes);
+app.use('/api/events', eventsRoutes);
 
 
 app.listen(PORT, ()=>{

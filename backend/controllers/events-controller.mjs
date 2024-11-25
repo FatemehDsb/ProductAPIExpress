@@ -1,6 +1,6 @@
 
-export const listShoppingBag = async(req, res)=>{
-    const url =`${process.env.BASE_URL}/shoppingBag`;
+export const listevents = async(req, res)=>{
+    const url =`${process.env.BASE_URL}/events`;
     const response = await fetch(url);
     try{
         const result = await response.json();
@@ -14,11 +14,11 @@ export const listShoppingBag = async(req, res)=>{
     }
 }
 
-export const findShoppingBag = async(req, res)=>{
+export const findevents = async(req, res)=>{
     
     const params = req.params.id;
     
-        const url = `${process.env.BASE_URL}/shoppingBag/${params}`;
+        const url = `${process.env.BASE_URL}/events/${params}`;
         try{
             const response= await fetch(url);
             if(response.ok){
