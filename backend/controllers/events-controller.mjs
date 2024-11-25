@@ -1,12 +1,23 @@
+import ItemsModel from "../models/ItemsModel.mjs";
 
 export const listevents = async(req, res)=>{
     const url =`${process.env.BASE_URL}/events`;
-    const response = await fetch(url);
     try{
-        const result = await response.json();
+        const response = await fetch(url);
+        const items = [];
+
         if(response.ok){
-            console.log(result);
-            res.status(200).json({success: true, result: result})
+            const result = await response.json();
+            result.map((item)=>{
+                items.push(
+                    new ItemsModel(
+                        item.id,
+                        item.name,
+                        item.type
+                    )
+                )
+            })
+            res.status(200).json({success: true, result: items})
             return;
         }
     }catch(error){

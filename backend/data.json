@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Tech Summit 2024",
-      "category": "Technology",
+      "theme": "Technology",
       "location": "Stockholm, Sweden",
       "date": "2024-05-12",
       "duration": "3 days",
@@ -16,7 +16,7 @@
     {
       "id": 2,
       "name": "Digital Marketing World",
-      "category": "Marketing",
+      "theme": "Marketing",
       "location": "Berlin, Germany",
       "date": "2024-06-22",
       "duration": "2 days",
@@ -31,7 +31,7 @@
     {
       "id": 1,
       "name": "AI Hackathon",
-      "category": "Hackathon",
+      "type": "Hackathon",
       "location": "Online",
       "date": "2024-03-15",
       "duration": "24 hours",
@@ -44,7 +44,7 @@
     {
       "id": 2,
       "name": "Startup Pitch Night",
-      "category": "Startup",
+      "type": "Startup",
       "location": "San Francisco, USA",
       "date": "2024-07-10",
       "duration": "1 evening",
