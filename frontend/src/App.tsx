@@ -1,11 +1,10 @@
 
 import './App.css'
+import { MainLayout } from './Layouts/MainLayout'
 
 function App() {
   
-  return (
-  <div> Start Project</div>
-  )
+  return <MainLayout/>
 }
 
-export default App
+export default App;
