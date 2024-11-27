@@ -1,116 +1,90 @@
 {
-  "pageNo" : 1 ,
-  "total_pages": 2,
-  "conferences": 
-  [
+  "decorations": [
     {
       "id": 1,
-      "name": "Tech Summit 2024",
-      "theme": "Technology",
-      "location": "Stockholm, Sweden",
-      "date": "2024-05-12",
-      "duration": "3 days",
-      "price": 399.99,
-      "description": "A leading conference featuring the latest trends in technology, innovation, and AI.",
-      "image_url": "https://example.com/images/tech_summit.jpg",
-      "speakers": ["John Doe", "Jane Smith", "Ali Khan"],
-      "rating": 4.8
-    },
-    {
-      "id": 2,
-      "name": "Digital Marketing World",
-      "theme": "Marketing",
-      "location": "Berlin, Germany",
-      "date": "2024-06-22",
-      "duration": "2 days",
-      "price": 299.99,
-      "description": "A comprehensive conference on the latest trends in digital marketing.",
-      "image_url": "https://example.com/images/marketing_world.jpg",
-      "speakers": ["Sophia Turner", "Carlos Martinez"],
+      "name": "Christmas Lights",
+      "style": "Modern",
+      "price": 49.99,
+      "stock": 100,
+      "description": "Bright LED Christmas lights for indoor and outdoor use.",
+      "image_url": "https://example.com/images/christmas_lights.jpg",
       "rating": 4.7
     },
     {
+      "id": 2,
+      "name": "Wreath",
+      "style": "Traditional",
+      "price": 25.99,
+      "stock": 50,
+      "description": "A beautifully designed holiday wreath.",
+      "image_url": "https://example.com/images/wreath.jpg",
+      "rating": 4.5
+    },
+    {
       "id": 3,
-      "name": "Health Tech Innovations",
-      "theme": "Healthcare",
-      "location": "London, UK",
-      "date": "2024-08-14",
-      "duration": "2 days",
-      "price": 499.99,
-      "description": "Exploring innovations in healthcare technology and digital health.",
-      "image_url": "https://example.com/images/health_tech.jpg",
-      "speakers": ["Dr. Emily Clark", "Dr. Martin James"],
-      "rating": 4.9
+      "name": "Holiday Garland",
+      "style": "Rustic",
+      "price": 19.99,
+      "stock": 80,
+      "description": "A festive garland to decorate your home.",
+      "image_url": "https://example.com/images/holiday_garland.jpg",
+      "rating": 4.8
     },
     {
       "id": 4,
-      "name": "Future of AI",
-      "theme": "Artificial Intelligence",
-      "location": "New York, USA",
-      "date": "2024-09-10",
-      "duration": "1 day",
-      "price": 199.99,
-      "description": "Discussions and workshops on the impact of AI on society.",
-      "image_url": "https://example.com/images/future_ai.jpg",
-      "speakers": ["Sam Lee", "Annabelle Green"],
-      "rating": 4.6
+      "name": "Table Centerpiece",
+      "style": "Elegant",
+      "price": 35.99,
+      "stock": 30,
+      "description": "A beautifully crafted centerpiece for holiday dinners.",
+      "image_url": "https://example.com/images/table_centerpiece.jpg",
+      "rating": 4.9
     }
   ],
-  
-  "events": 
-  [
+  "gifts": [
     {
       "id": 1,
-      "name": "AI Hackathon",
-      "type": "Hackathon",
-      "location": "Online",
-      "date": "2024-03-15",
-      "duration": "24 hours",
-      "registration_fee": 0,
-      "description": "A virtual hackathon to solve real-world problems using AI.",
-      "image_url": "https://example.com/images/ai_hackathon.jpg",
-      "participants": 300,
-      "rating": 4.9
+      "name": "Holiday Candle Set",
+      "category": "Luxury",
+      "price": 25.99,
+      "stock": 80,
+      "description": "Set of three holiday-themed scented candles.",
+      "image_url": "https://example.com/images/holiday_candles.jpg",
+      "rating": 4.6
     },
     {
       "id": 2,
-      "name": "Startup Pitch Night",
-      "type": "Startup",
-      "location": "San Francisco, USA",
-      "date": "2024-07-10",
-      "duration": "1 evening",
-      "registration_fee": 50.0,
-      "description": "An evening where startups pitch their ideas to investors and the public.",
-      "image_url": "https://example.com/images/startup_pitch.jpg",
-      "participants": 150,
-      "rating": 4.6
+      "name": "Gift Wrap Set",
+      "category": "Essential",
+      "price": 15.99,
+      "stock": 150,
+      "description": "Assorted holiday gift wraps and ribbons.",
+      "image_url": "https://example.com/images/gift_wrap.jpg",
+      "rating": 4.8
     },
     {
       "id": 3,
-      "name": "Tech Meetup Stockholm",
-      "type": "Networking",
-      "location": "Stockholm, Sweden",
-      "date": "2024-02-25",
-      "duration": "3 hours",
-      "registration_fee": 20.0,
-      "description": "Meet local tech enthusiasts and professionals to discuss trends and ideas.",
-      "image_url": "https://example.com/images/tech_meetup.jpg",
-      "participants": 50,
-      "rating": 4.3
+      "name": "Holiday Mug",
+      "category": "Affordable",
+      "price": 12.99,
+      "stock": 120,
+      "description": "A ceramic mug with a holiday design.",
+      "image_url": "https://example.com/images/holiday_mug.jpg",
+      "rating": 4.4
     },
     {
       "id": 4,
-      "name": "Game Developers Conference",
-      "type": "Gaming",
-      "location": "Los Angeles, USA",
-      "date": "2024-10-01",
-      "duration": "5 days",
-      "registration_fee": 799.99,
-      "description": "The largest annual event for game developers worldwide.",
-      "image_url": "https://example.com/images/gdc.jpg",
-      "participants": 1200,
-      "rating": 4.9
+      "name": "Plush Toy Santa",
+      "category": "Kids",
+      "price": 19.99,
+      "stock": 100,
+      "description": "A soft and cuddly Santa Claus plush toy.",
+      "image_url": "https://example.com/images/plush_toy_santa.jpg",
+      "rating": 4.7
     }
-  ]
- 
-} 
+  ],
+  "shoppingCart": {
+    "items": [],
+    "totalPrice": 0.0
+  }
+}

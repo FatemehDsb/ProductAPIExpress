@@ -3,8 +3,8 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 
-import conferenceRoutes from './routes/conferences-routes.mjs';
-import eventsRoutes from './routes/events-routes.mjs'
+import decorationsRoutes from './routes/decorations-routes.mjs';
+import giftsRoutes from './routes/gifts-routes.mjs'
 
 
 //steg2 
@@ -19,8 +19,8 @@ const app = express();
 
 //steg4
 app.use(cors());
-app.use('/api/conferences', conferenceRoutes);
-app.use('/api/events', eventsRoutes);
+app.use('/api/decorations', decorationsRoutes);
+app.use('/api/gifts', giftsRoutes);
 
 
 app.listen(PORT, ()=>{

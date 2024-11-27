@@ -1,17 +1,17 @@
 export class ItemsModel {
-    constructor(id, name, theme ) {
+    constructor(id, name, style ) {
             this.id=id;
             this.name=name;
-            this.theme= theme;
+            this.style= style;
     }
 } 
 
 export class DetailsModel extends ItemsModel{
-    constructor(id, name, theme, location, date, price){
-        super(id, name, theme)
-        this.location=location;
-        this.date=date;
+    constructor(id, name, style, price, stock, rating){
+        super(id, name, style)
         this.price=price;
+        this.stock=stock;
+        this.rating=rating;
         
     }
 }

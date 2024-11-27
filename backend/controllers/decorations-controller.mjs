@@ -2,17 +2,17 @@
 import {DetailsModel, ItemsModel } from "../models/ItemsModel.mjs";
 import { fetchDate } from "../utilities/httpClient.mjs";
 
-export const listconferences = async(req, res)=>{
+export const listdecorations = async(req, res)=>{
     try{
         const items=[];
-        const result = await fetchDate(`conferences`);
+        const result = await fetchDate(`decorations`);
         
             result.map((item)=>{
                 items.push(
                     new ItemsModel
                         (item.id, 
                         item.name, 
-                        item.theme))
+                        item.style))
             });
             res.status(200).json({
                 success: true,
@@ -28,17 +28,17 @@ export const listconferences = async(req, res)=>{
     }
 };
 
-export const findconferences = async(req, res)=>{
+export const finddecorations = async(req, res)=>{
     const params = req.params.id;
     try{
-      const result = await fetchDate(`conferences/${params}`)
+      const result = await fetchDate(`decorations/${params}`)
             const item = new DetailsModel(
                 result.id, 
                 result.name, 
-                result.theme,
-                result.location, 
-                result.date, 
-                result.price
+                result.style,
+                result.price, 
+                result.stock, 
+                result.rating
             )
        
             res.status(200).json({success: true, result: item})
