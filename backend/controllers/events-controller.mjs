@@ -1,13 +1,11 @@
-import ItemsModel from "../models/ItemsModel.mjs";
+import {DetailsModel, ItemsModel} from "../models/ItemsModel.mjs";
+import { fetchDate } from "../utilities/httpClient.mjs";
 
 export const listevents = async(req, res)=>{
-    const url =`${process.env.BASE_URL}/events`;
-    try{
-        const response = await fetch(url);
-        const items = [];
 
-        if(response.ok){
-            const result = await response.json();
+    try{
+        const result = await fetchDate (`events`);
+        const items = [];
             result.map((item)=>{
                 items.push(
                     new ItemsModel(
@@ -19,25 +17,25 @@ export const listevents = async(req, res)=>{
             })
             res.status(200).json({success: true, result: items})
             return;
-        }
     }catch(error){
         res.status(500).json({success:false, message: error})
     }
 }
 
 export const findevents = async(req, res)=>{
-    
     const params = req.params.id;
-    
-        const url = `${process.env.BASE_URL}/events/${params}`;
         try{
-            const response= await fetch(url);
-            if(response.ok){
-                const result = await response.json();
-                res.status(200).json({success: true, result: result})
+            const result = await fetchDate(`events/${params}`);
+                const  item = new DetailsModel(
+                    result.id,
+                    result.name,
+                    result.type,
+                    result.location,
+                    result.date,
+                    result.registration_fee,
+                )
+                res.status(200).json({success: true, result: item})
                 return;
-            }
-    
         }catch(error){
             res.status(500).json({success:false, message: error})
         }

@@ -27,5 +27,6 @@ app.listen(PORT, ()=>{
 console.log(`Server är startad och lyssnar på port ${PORT}`);
 })
 
+//lektion 6 -2:59
 
 

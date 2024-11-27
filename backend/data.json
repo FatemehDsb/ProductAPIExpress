@@ -1,5 +1,8 @@
 {
-  "conferences": [
+  "pageNo" : 1 ,
+  "total_pages": 2,
+  "conferences": 
+  [
     {
       "id": 1,
       "name": "Tech Summit 2024",
@@ -25,9 +28,37 @@
       "image_url": "https://example.com/images/marketing_world.jpg",
       "speakers": ["Sophia Turner", "Carlos Martinez"],
       "rating": 4.7
+    },
+    {
+      "id": 3,
+      "name": "Health Tech Innovations",
+      "theme": "Healthcare",
+      "location": "London, UK",
+      "date": "2024-08-14",
+      "duration": "2 days",
+      "price": 499.99,
+      "description": "Exploring innovations in healthcare technology and digital health.",
+      "image_url": "https://example.com/images/health_tech.jpg",
+      "speakers": ["Dr. Emily Clark", "Dr. Martin James"],
+      "rating": 4.9
+    },
+    {
+      "id": 4,
+      "name": "Future of AI",
+      "theme": "Artificial Intelligence",
+      "location": "New York, USA",
+      "date": "2024-09-10",
+      "duration": "1 day",
+      "price": 199.99,
+      "description": "Discussions and workshops on the impact of AI on society.",
+      "image_url": "https://example.com/images/future_ai.jpg",
+      "speakers": ["Sam Lee", "Annabelle Green"],
+      "rating": 4.6
     }
   ],
-  "events": [
+  
+  "events": 
+  [
     {
       "id": 1,
       "name": "AI Hackathon",
@@ -53,6 +84,33 @@
       "image_url": "https://example.com/images/startup_pitch.jpg",
       "participants": 150,
       "rating": 4.6
+    },
+    {
+      "id": 3,
+      "name": "Tech Meetup Stockholm",
+      "type": "Networking",
+      "location": "Stockholm, Sweden",
+      "date": "2024-02-25",
+      "duration": "3 hours",
+      "registration_fee": 20.0,
+      "description": "Meet local tech enthusiasts and professionals to discuss trends and ideas.",
+      "image_url": "https://example.com/images/tech_meetup.jpg",
+      "participants": 50,
+      "rating": 4.3
+    },
+    {
+      "id": 4,
+      "name": "Game Developers Conference",
+      "type": "Gaming",
+      "location": "Los Angeles, USA",
+      "date": "2024-10-01",
+      "duration": "5 days",
+      "registration_fee": 799.99,
+      "description": "The largest annual event for game developers worldwide.",
+      "image_url": "https://example.com/images/gdc.jpg",
+      "participants": 1200,
+      "rating": 4.9
     }
   ]
-}
+ 
+} 
