@@ -2,7 +2,7 @@
 
 const ConferencesPage = () => {
   return (
-    <div>ConferencesPage</div>
+    <h1>ConferencesPage</h1>
   )
 }
 
