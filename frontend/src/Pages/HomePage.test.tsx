@@ -6,8 +6,8 @@ import { HomePage } from "./HomePage";
 beforeEach(()=>render(<HomePage/>));
 
 describe("HomePage Component", ()=>{
-    it("Should have a heading with the text EventsAndConferencs ", ()=>{
-        screen.getByRole("heading", {name: "EventsAndConferencs"});
+    it("Should have a heading with the text Products ", ()=>{
+        screen.getByRole("heading", {name: /Products/i });
                                         //   name: /MovieFlix/i
     })
 })

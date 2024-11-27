@@ -1,6 +1,11 @@
+import DecorationsPage from "../Pages/DecorationsPage";
+
 
 
 export const MainLayout = () => {
-  return <div>MainLayout</div>
-
+  return(
+    <main>
+    <DecorationsPage/>
+    </main>
+  )
 }

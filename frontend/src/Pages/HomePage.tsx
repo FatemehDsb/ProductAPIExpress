@@ -1,5 +1,6 @@
+import Header from "../Components/UI/Header"
 
 
 export const HomePage = () => {
-  return <h1>EventsAndConferencs</h1>
+  return <Header title="Products" />
 }
