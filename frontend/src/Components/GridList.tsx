@@ -1,14 +1,13 @@
 //lektion 4- 3:36 
 //lektion4- 3:41
 
-import { IDecoration } from '../Models/IDecoration';
-import { IGift } from '../Models/IGift';
+import { IProduct } from '../Models/IProduct';
 
 import styles from './gridlist.module.css';
 import { Item } from './Item';
 
 
-const GridList = ({ items }: { items: IDecoration[] |IGift[] }) => { 
+const GridList = ({ items }: { items: IProduct[] }) => { 
  console.log(items);
  
   return (

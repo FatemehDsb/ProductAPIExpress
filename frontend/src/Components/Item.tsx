@@ -1,32 +1,24 @@
 
-
-import { IDecoration } from '../Models/IDecoration';
-import { IGift } from '../Models/IGift';
-
+import { IProduct } from '../Models/IProduct';
 import Card from './UI/Card';
 import ItemInfo from './UI/ItemInfo';
 
 type ItemProps = {
-  item: IDecoration | IGift;
+  item: IProduct
 };
 
-function isDecoration ( product :IDecoration | IGift) : product is IDecoration{
-  return ( product as IDecoration).name !== undefined;
-}
+// function isDecoration ( product :ItemProps) : product is IDecoration{
+//   return ( product as IDecoration).name !== undefined;
+// }
 
 export const Item = ({ item }: ItemProps) => {
-  //const img: string = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
-  if ( isDecoration(item)){
-    const product = item as IDecoration;
-  return (
-   <Card>
-        <ItemInfo
-        name= {product.name}
-        style={product.style}/>
-   </Card>
-  );
-};
-
-
+  
+    return (
+        <Card>
+              <ItemInfo
+              name= {item.name}
+              style={item.style}/>
+        </Card>
+    );
 
 };

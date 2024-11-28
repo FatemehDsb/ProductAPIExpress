@@ -1,7 +1,7 @@
 import axios from "axios";
-import { IDecoration } from "../Models/IDecoration";
+import { IProduct } from "../Models/IProduct";
 
-export const LoadDecorations = async (endpoint: string): Promise <IDecoration[]> =>{
+export const LoadDecorations = async (endpoint: string): Promise <IProduct[]> =>{
   const baseUrl = import.meta.env.VITE_BASE_URL;
   const url = `${baseUrl}/${endpoint}`;
 

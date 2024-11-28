@@ -1,9 +1,8 @@
-import { IDecoration } from "../Models/IDecoration"
-import { IGift } from "../Models/IGift"
+import { IProduct } from "../Models/IProduct";
 import GridList  from "./GridList";
 
 type ItemListProps = {
-    items: IDecoration[] | IGift[]
+    items: IProduct[]
 };
 
 const ItemsList = ( {items} : ItemListProps)=>{
