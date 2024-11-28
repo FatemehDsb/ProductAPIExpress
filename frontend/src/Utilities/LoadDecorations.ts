@@ -6,10 +6,6 @@ export const LoadDecorations = async (endpoint: string): Promise <IDecoration[]>
   const url = `${baseUrl}/${endpoint}`;
 
   const results = await axios.get(url);
-    
-  return results.data;
+  return results?.data.result.data;
         
-        
-
-
 }

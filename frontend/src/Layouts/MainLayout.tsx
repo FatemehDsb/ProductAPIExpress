@@ -1,11 +1,10 @@
-import DecorationsPage from "../Pages/DecorationsPage";
-
-
+import { Outlet } from 'react-router-dom';
 
 export const MainLayout = () => {
-  return(
+  return (
     <main>
-    <DecorationsPage/>
+    
+      <Outlet />
     </main>
-  )
-}
+  );
+};

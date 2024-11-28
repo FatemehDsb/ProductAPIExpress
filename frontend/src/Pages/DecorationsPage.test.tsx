@@ -4,7 +4,7 @@
 
 import { describe, it, beforeEach, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import DecorationsPage from './DecorationsPage';
+import {DecorationsPage} from './DecorationsPage';
 
 
 

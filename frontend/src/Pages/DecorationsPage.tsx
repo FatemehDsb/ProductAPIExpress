@@ -2,11 +2,11 @@ import Header from "../Components/UI/Header"
 import { useState, useEffect } from "react"
 
 import { IDecoration } from "../Models/IDecoration"
-import  GridList  from "../Components/GridList"
 import { LoadDecorations } from "../Utilities/LoadDecorations"
+import ItemsList from "../Components/ItemsList"
 //import { useParams } from "react-router-dom"
 
-const DecorationsPage = () => {
+export const DecorationsPage = () => {
   const [decorations, setDecorations] = useState<IDecoration[]>([])
   // const {id} = useParams();
 
@@ -20,10 +20,10 @@ const DecorationsPage = () => {
     <>
       <Header title="Popular decorations"/>
   
-     <GridList items={decorations}/>
+     {/* <GridList items={decorations}/> */}
+      <ItemsList items= {decorations}/>
   </>
 
   )
 }
 
-export default DecorationsPage

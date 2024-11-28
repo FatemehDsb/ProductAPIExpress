@@ -18,14 +18,11 @@ export const Item = ({ item }: ItemProps) => {
   //const img: string = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
   if ( isDecoration(item)){
     const product = item as IDecoration;
-
   return (
    <Card>
-    
         <ItemInfo
         name= {product.name}
         style={product.style}/>
-    
    </Card>
   );
 };

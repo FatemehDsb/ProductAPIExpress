@@ -9,6 +9,8 @@ import { Item } from './Item';
 
 
 const GridList = ({ items }: { items: IDecoration[] |IGift[] }) => { 
+ console.log(items);
+ 
   return (
     <section className={styles.grid}>
       {items?.map((item) => (
