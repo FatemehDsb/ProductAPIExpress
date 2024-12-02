@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react"
-import { IDecoration } from "../Models/IDecoration"
+
 import { useParams } from "react-router-dom";
 import { FindDecoration } from "../Utilities/FindDecoration";
+import { IProductDetails } from "../Models/IProductDetails";
 
 export const DecorationPage = () => {
-    const [decoration, setDecoration]=useState<IDecoration>();
+    const [decoration, setDecoration]=useState<IProductDetails>();
     const {id} = useParams();
 
     useEffect(()=>{
@@ -14,6 +15,7 @@ export const DecorationPage = () => {
             setDecoration(found);
         }
         getDecoration();
+        console.log(decoration);
     
     }, [id]);
 

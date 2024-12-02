@@ -6,8 +6,8 @@ type ItemInfoProps = {
   const ItemInfo = ({ name, style }: ItemInfoProps) => {
     return (
       <div className='card-body'>
-        <h5>{name}</h5>
-        <small className='text-muted'>{style}</small>
+        <h5>name is : ${name}</h5>
+        <small className='text-muted'>style is {style}</small>
       </div>
     );
   };

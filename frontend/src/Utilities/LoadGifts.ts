@@ -1,13 +1,15 @@
 import axios from "axios";
-import { IGift } from "../Models/IGift";
 
-export const LoadGifts = async (endpoint: string): Promise <IGift[]> =>{
+import { IProduct } from "../Models/IProduct";
+
+export const LoadGifts = async (endpoint: string): Promise <IProduct[]> =>{
   const baseUrl = import.meta.env.VITE_BASE_URL;
   const url = `${baseUrl}/${endpoint}`;
 
   const results = await axios.get(url);
+    console.log(results?.data?.result);
     
-  return results.data;
+  return results?.data?.result;
         
         
 

@@ -11,12 +11,14 @@ import { MainLayout } from './Layouts/MainLayout'
 import { HomePage } from './Pages/HomePage';
 import {DecorationsPage} from './Pages/DecorationsPage';
 import { DecorationPage } from './Pages/DecorationPage';
+import {GiftsPage} from './Pages/GiftsPage';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<MainLayout/>}>
       <Route index element={<HomePage/>}/>
       <Route path="/decorations" element={<DecorationsPage/>}/>
       <Route path="/decorations/:id" element={<DecorationPage/>}/>
+      <Route path="/gifts" element={<GiftsPage/>}/>
   </Route>
 ))
 

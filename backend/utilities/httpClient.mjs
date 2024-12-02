@@ -1,6 +1,12 @@
-export const fetchDate = async(endpoint, params="")=>{
-    const url = `${process.env.BASE_URL}/${endpoint}/${params}`;
+export const fetchDate = async(endpoint, params="", query)=>{
+    let url;
 
+    if (query){
+        
+         url = `${process.env.BASE_URL}/${endpoint}?query=${query}`;
+    }else{
+        url = `${process.env.BASE_URL}/${endpoint}/${params}`;
+    }
     try{
         const response = await fetch(url);
         if(response.ok){
