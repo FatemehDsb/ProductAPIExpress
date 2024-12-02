@@ -12,6 +12,7 @@ import { HomePage } from './Pages/HomePage';
 import {DecorationsPage} from './Pages/DecorationsPage';
 import { DecorationPage } from './Pages/DecorationPage';
 import {GiftsPage} from './Pages/GiftsPage';
+import {GiftPage} from './Pages/GiftPage';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<MainLayout/>}>
@@ -19,6 +20,7 @@ const router = createBrowserRouter(createRoutesFromElements(
       <Route path="/decorations" element={<DecorationsPage/>}/>
       <Route path="/decorations/:id" element={<DecorationPage/>}/>
       <Route path="/gifts" element={<GiftsPage/>}/>
+      <Route path="/gifts/:id" element={<GiftPage/>}/>
   </Route>
 ))
 
