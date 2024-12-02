@@ -5,6 +5,6 @@ type CardProps = {
 };
 
 const Card = ({ children }: CardProps) => {
-  return <section className='card'>{children}</section>;
+  return <section className="card">{children}</section>;
 };
 export default Card;

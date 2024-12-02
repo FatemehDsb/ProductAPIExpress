@@ -11,7 +11,9 @@ export const listgifts = async(req, res)=>{
                     new ItemsModel(
                         item.id,
                         item.name,
-                        item.category
+                        item.category, 
+                        item.price,
+                        item.rating
                     )
                 )
             })

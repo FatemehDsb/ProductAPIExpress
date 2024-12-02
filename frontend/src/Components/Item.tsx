@@ -17,7 +17,11 @@ export const Item = ({ item }: ItemProps) => {
         <Card>
               <ItemInfo
               name= {item.name}
-              style={item.style}/>
+              style={item.style}
+              stock = {item.stock}
+              price = {item.price}
+
+              />
         </Card>
     );
 

@@ -41,7 +41,7 @@ export const GiftsPage = () => {
   }
   return (
     <>
-      <Header title="Popular decorations"/>
+      <Header title="Popular gifts"/>
      <GridList items={gifts}/>
    </>
 
