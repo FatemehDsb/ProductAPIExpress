@@ -1,0 +1,24 @@
+.navbar_div{
+    border: 1px solid red;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+.navbar ul{
+    padding: 0.5rem 0.5rem;
+    border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-decoration: none;
+    gap: 2rem;
+}   
+.navbar ul li {
+    list-style: none;
+}
+.menu_item{
+   display: flex;
+   flex-direction: row;
+border: 1px solid white;
+}
