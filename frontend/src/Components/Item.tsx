@@ -7,9 +7,6 @@ type ItemProps = {
   item: IProduct
 };
 
-// function isDecoration ( product :ItemProps) : product is IDecoration{
-//   return ( product as IDecoration).name !== undefined;
-// }
 
 export const Item = ({ item }: ItemProps) => {
   
@@ -20,6 +17,8 @@ export const Item = ({ item }: ItemProps) => {
               style={item.style}
               stock = {item.stock}
               price = {item.price}
+              rating = {item.rating}
+              image= {item.image}
 
               />
         </Card>

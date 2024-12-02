@@ -13,7 +13,8 @@ export const listgifts = async(req, res)=>{
                         item.name,
                         item.category, 
                         item.price,
-                        item.rating
+                        item.rating, 
+                        item.image
                     )
                 )
             })
@@ -35,6 +36,7 @@ export const findgifts = async(req, res)=>{
                     result.stock,
                     result.description,
                     result.rating,
+                    result.image
                 )
                 res.status(200).json({success: true, result: item})
                 return;

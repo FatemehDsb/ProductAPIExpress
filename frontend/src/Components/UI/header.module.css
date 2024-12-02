@@ -1,5 +1,8 @@
 .title {
     text-align: center;
-    margin: 2rem 0rem;
+    margin: 1rem 0rem;
+    font-size: 2rem;
+    border: 1px solid yellow;
+    padding: 0.5rem;
 
   }

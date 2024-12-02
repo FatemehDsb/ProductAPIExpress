@@ -22,7 +22,7 @@ export const GiftsPage = () => {
     
 
     result.map((item)=>{
-      const {id, name, style, price, stock, rating, productType}: IProduct = item;
+      const {id, name, style, price, stock, rating,image, productType}: IProduct = item;
       const product : IProduct = {
         id,
         name,
@@ -30,10 +30,13 @@ export const GiftsPage = () => {
         price, 
         stock,
         rating,
+        image,
         productType :"gift"
       }
 
       productList.push(product)
+      console.log(product);
+      
     })
 
     // setDecorations(await LoadDecorations("decorations"));

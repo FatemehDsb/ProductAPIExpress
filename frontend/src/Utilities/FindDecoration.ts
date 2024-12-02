@@ -9,7 +9,7 @@ export const FindDecoration = async (endpoint : string) : Promise<IProductDetail
   console.log(url);
   
   const result = await axios.get(url);
-  console.log(result.data);
+  console.log(result.data.result);
   
 return result.data.result;
 }

@@ -13,7 +13,7 @@ export const handlers = [
               "price": 49.99,
               "stock": 100,
               "description": "Bright LED Christmas lights for indoor and outdoor use.",
-              "image_url": "https://example.com/images/christmas_lights.jpg",
+              "image": "https://example.com/images/christmas_lights.jpg",
               "rating": 4.7
             },
             {
@@ -23,7 +23,7 @@ export const handlers = [
               "price": 25.99,
               "stock": 50,
               "description": "A beautifully designed holiday wreath.",
-              "image_url": "https://example.com/images/wreath.jpg",
+              "image": "https://example.com/images/wreath.jpg",
               "rating": 4.5
             },
     

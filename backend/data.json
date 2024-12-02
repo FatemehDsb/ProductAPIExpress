@@ -7,7 +7,7 @@
       "price": 49.99,
       "stock": 100,
       "description": "Bright LED Christmas lights for indoor and outdoor use.",
-      "image_url": "https://example.com/images/christmas_lights.jpg",
+      "image": "dek-1",
       "rating": 4.7
     },
     {
@@ -17,7 +17,7 @@
       "price": 25.99,
       "stock": 50,
       "description": "A beautifully designed holiday wreath.",
-      "image_url": "https://example.com/images/wreath.jpg",
+      "image": "dek-2",
       "rating": 4.5
     },
     {
@@ -27,7 +27,7 @@
       "price": 19.99,
       "stock": 80,
       "description": "A festive garland to decorate your home.",
-      "image_url": "https://example.com/images/holiday_garland.jpg",
+      "image": "dek-3",
       "rating": 4.8
     },
     {
@@ -37,7 +37,7 @@
       "price": 35.99,
       "stock": 30,
       "description": "A beautifully crafted centerpiece for holiday dinners.",
-      "image_url": "https://example.com/images/table_centerpiece.jpg",
+      "image": "dek-4",
       "rating": 4.9
     }
   ],
@@ -49,7 +49,7 @@
       "price": 25.99,
       "stock": 80,
       "description": "Set of three holiday-themed scented candles.",
-      "image_url": "https://example.com/images/holiday_candles.jpg",
+      "image": "gift-1",
       "rating": 4.6
     },
     {
@@ -59,7 +59,7 @@
       "price": 15.99,
       "stock": 150,
       "description": "Assorted holiday gift wraps and ribbons.",
-      "image_url": "https://example.com/images/gift_wrap.jpg",
+      "image": "gift-2",
       "rating": 4.8
     },
     {
@@ -69,7 +69,7 @@
       "price": 12.99,
       "stock": 120,
       "description": "A ceramic mug with a holiday design.",
-      "image_url": "https://example.com/images/holiday_mug.jpg",
+      "image": "gift-3",
       "rating": 4.4
     },
     {
@@ -79,7 +79,7 @@
       "price": 19.99,
       "stock": 100,
       "description": "A soft and cuddly Santa Claus plush toy.",
-      "image_url": "https://example.com/images/plush_toy_santa.jpg",
+      "image": "gift-4",
       "rating": 4.7
     }
   ],

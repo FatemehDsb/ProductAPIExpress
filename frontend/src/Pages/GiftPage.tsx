@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import { FindGift } from "../Utilities/FindGift";
 import { IProductDetails } from "../Models/IProductDetails";
+import ProductDetails from "../Components/ProductDetails";
 
 export const GiftPage = () => {
     const [gift, setGift]=useState<IProductDetails>();
@@ -21,8 +22,6 @@ export const GiftPage = () => {
 
     
     return (
-        <p>
-         {gift?.id}
-        </p>
+        <ProductDetails product={gift!}/>
   )
 }

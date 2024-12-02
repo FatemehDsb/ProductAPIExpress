@@ -5,8 +5,9 @@ export interface IProduct {
     name: string,
     style: string,
     price: number,
-    stock:string,
+    stock:number,
     rating: number,
+    image: string,
     productType: "decoration" | "gift"
 }
    
