@@ -95,6 +95,8 @@ body {
   flex-direction: column;
   padding: 1rem;
   margin: 1rem;
+  max-width: 400px;
+  
 
   h4{
     text-align: left;
@@ -104,6 +106,7 @@ body {
 .productDetail-image{
  
   width: 100%;
+  max-width: 400px;
   
 }
 
