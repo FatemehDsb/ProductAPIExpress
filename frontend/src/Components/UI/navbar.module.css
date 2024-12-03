@@ -1,14 +1,15 @@
 .navbar_div{
     padding: 0.5rem 1rem;
     width: 100%;
-    background-color: rgb(83, 1, 1);
+    background-color: #21354729;
 }
 .navbar{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
-    justify-content:space-between
+    justify-content:space-between;
+    align-items: center;
 }
 
 .navbar ul{
@@ -24,6 +25,7 @@
     list-style: none;
 }
 .menu_item{
+    
    display: flex;
    flex-direction: row;
 
