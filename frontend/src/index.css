@@ -33,6 +33,11 @@ body {
   flex-direction: column;
 }
 
+.product-body{
+  display: flex;
+  flex-direction: column;
+}
+
 .product-img{
   width: 100%;
 

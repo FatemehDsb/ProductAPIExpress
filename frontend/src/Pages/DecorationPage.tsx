@@ -11,17 +11,24 @@ export const DecorationPage = () => {
 
     useEffect(()=>{
         if (!id) return; 
+
         const getDecoration = async()=>{
             const found = await FindDecoration(`/decorations/${id}`)
-            console.log(found);
+             console.log("Fetched decoration:", found);
             
-            setDecoration(found);
+             if (found) {
+                setDecoration(found);
+              }
         }
         getDecoration();
-        console.log(decoration);
+  
     
     }, [id]);
 
+    if (!decoration) {
+        return <p>Loading...</p>;
+      }
+      
     
     return (
        <ProductDetails product= {decoration!}/>

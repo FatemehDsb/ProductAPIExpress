@@ -6,6 +6,8 @@ type ItemListProps = {
 };
 
 const ItemsList = ( {items} : ItemListProps)=>{
+   console.log(items);
+   
     return <GridList  items= {items}/>
 }
 export default ItemsList;

@@ -9,7 +9,7 @@ export const FindGift = async (endpoint : string) : Promise<IProductDetails> => 
   console.log(url);
   
   const result = await axios.get(url);
-  console.log(result.data);
+  console.log(result.data.result);
   
 return result.data.result;
 }

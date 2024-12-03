@@ -6,6 +6,8 @@ export const LoadDecorations = async (endpoint: string): Promise <IProduct[]> =>
   const url = `${baseUrl}/${endpoint}`;
 
   const results = await axios.get(url);
-  return results?.data.result.data;
+  console.log(results.data.result);
+  
+  return results?.data.result;
         
 }

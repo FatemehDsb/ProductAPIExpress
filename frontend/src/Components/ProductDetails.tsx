@@ -7,21 +7,22 @@ type DetailsProp = {
 
 
 const ProductDetails = ({product} : DetailsProp) => {
+  console.log("Rendering Product Details:", product);
   return (
-   <>
-   <section>
-        <div className="product-image"></div>
+   <section className="product-body">
+        <div className="product-image">
+            <img src={`/images/${product?.image}.jpg`} alt={product?.name} />
+        </div>
         <div className="details-info">
             <h2>{product?.name}</h2>
             <p>{product?.style}</p>
+            <p>{product?.price.toFixed(2)}</p>
             <p>{product?.stock}</p>
-            <p>{product?.price}</p>
-            <p>{product?.rating}</p>
+            <p>{product?.rating}/5</p>
             <p>{product?.description}</p>
-            <img src={`/images/${product?.image}`} alt={product.name} />
         </div>
    </section>
-   </>
+
   )
 }
 

@@ -14,7 +14,7 @@ export const GiftsPage = () => {
     loadGifts();
   }, [])
   const loadGifts = async()=>{
- 
+
     let result = [];
     const productList :IProduct[]=[];
     result = await LoadGifts ("gifts");
@@ -39,14 +39,13 @@ export const GiftsPage = () => {
       
     })
 
-    // setDecorations(await LoadDecorations("decorations"));
     setGifts(productList);
   }
+
   return (
     <>
       <Header title="Popular gifts"/>
      <GridList items={gifts}/>
    </>
-
-  )
+     )
 }
