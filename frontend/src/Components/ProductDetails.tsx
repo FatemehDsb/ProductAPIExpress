@@ -10,8 +10,8 @@ const ProductDetails = ({product} : DetailsProp) => {
   console.log("Rendering Product Details:", product);
   return (
    <section className="product-body">
-        <div className="product-image">
-            <img src={`/images/${product?.image}.jpg`} alt={product?.name} />
+        <div >
+            <img className="product-image" src={`/images/${product?.image}.jpg`} alt={product?.name} />
         </div>
         <div className="details-info">
             <h2>{product?.name}</h2>

@@ -8,8 +8,8 @@ const Navbar = () => {
     <>
     <header className={styles.navbar_div}>
         <nav className={styles.navbar}>
+                <li className={styles.logo}>Christmas Shop</li>
             <ul >
-                <li className={styles.logo}>LOGO</li>
                 <li className={styles.menu_item}>
                     <NavLink  to = "/">
                         Home

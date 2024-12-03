@@ -10,17 +10,23 @@ type ItemInfoProps = {
   
   const ItemInfo = ({ name, style, price, stock, image, rating}: ItemInfoProps) => {
     return (
-      <div className='card-body'>
+      <>
         <img  className="product-img" src={`/images/${image}.jpg`} alt={name} />
-        <h5> {name} {style}</h5>
-        <div>
-          <p>{price}</p>
-          <p>{stock}</p>
-          <p>{rating}</p>
+        <div className='card-body'>
+          <div className="product-title">
+            <h4> {name}</h4>
+            <p>{price} kr</p>
+          </div>
+
+          <div className="product-detail">
+              <p><span>
+                {stock} st availabe
+                </span>
+                </p>
+              <p>{rating}/5</p>
+          </div>
         </div>
-        
-        
-      </div>
+      </>
     );
   };
   export default ItemInfo;
