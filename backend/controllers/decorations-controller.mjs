@@ -17,7 +17,8 @@ export const listdecorations = async(req, res)=>{
                         item.stock,
                         item.description,
                         item.image,
-                        item.rating
+                        item.rating,
+                        "decoration"
                     ))
             });
             res.status(200).json({
@@ -41,7 +42,8 @@ export const finddecorations = async(req, res)=>{
                 result.stock,
                 result.description, 
                 result.image,
-                result.rating
+                result.rating,
+                 "decoration"
             )
        
             res.status(200).json({success: true, result: item})

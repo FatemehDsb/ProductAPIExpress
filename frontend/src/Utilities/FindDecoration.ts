@@ -10,7 +10,7 @@ export const FindDecoration = async (endpoint : string) : Promise<IProductDetail
   
   try {
     const result = await axios.get(url);
-    console.log("recieved Data:" , result.data);
+    console.log("recieved Data:" , result.data.result);
         if(result.data?.result){
           return result.data.result;
         }else{
@@ -18,8 +18,8 @@ export const FindDecoration = async (endpoint : string) : Promise<IProductDetail
           return null;
         }
   }catch(error){
-     console.log("error is", error);
-     return null;
-    
+      console.log("error is", error);
+      return null;
+      
   }
-}
+  }

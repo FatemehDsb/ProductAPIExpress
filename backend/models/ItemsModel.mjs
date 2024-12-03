@@ -1,7 +1,7 @@
 export class ItemsModel {
-    constructor(id, name, style , price, stock, description, image, rating) {
+    constructor(id, name, style , price, stock, description, image, rating, productType) {
 
-        if (!id || !name || !style || !price || !stock || !image || !rating) {
+        if (!id || !name || !style || !price || !stock || !image || !rating || !productType) {
             throw new Error("Missing required properties");
         }
             this.id=id;
@@ -12,15 +12,8 @@ export class ItemsModel {
             this.description=description;
             this.image=image;
             this.rating= rating;
+            this.productType= productType
 
     }
 } 
 
-// export class DetailsModel extends ItemsModel{
-//     constructor(id, name, style, price, stock,image, rating,description ){
-//         super(id, name, style, price, stock,image, rating)
-    
-//         this.description=description
-        
-//     }
-// }

@@ -1,21 +1,29 @@
+import { NavLink } from "react-router-dom";
+
 type ItemInfoProps = {
+    id:number;
     name: string;
     style: string;
     price: number;
     stock: number;
     image: string;
     rating: number;
-  
+    productType : string
   };
   
-  const ItemInfo = ({ name, style, price, stock, image, rating}: ItemInfoProps) => {
+  const ItemInfo = ({ name,id , price, stock, image, rating, productType}: ItemInfoProps) => {
+    console.log(`/${productType}s/${id}`);
+    
     return (
       <>
+      <NavLink  className='card-body' to = {`/${productType}s/${id}`}>
+
         <img  className="product-img" src={`/images/${image}.jpg`} alt={name} />
-        <div className='card-body'>
+        <div >
           <div className="product-title">
             <h4> {name}</h4>
             <p>{price} kr</p>
+            
           </div>
 
           <div className="product-detail">
@@ -26,6 +34,8 @@ type ItemInfoProps = {
               <p>{rating}/5</p>
           </div>
         </div>
+
+      </NavLink>
       </>
     );
   };
