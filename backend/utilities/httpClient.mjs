@@ -19,3 +19,7 @@ export const fetchDate = async(endpoint, params="", query)=>{
         throw new Error(`problem in fetchin data ${endpoint} - ${response.statusText}`)
     }
 }
+
+// export const addData = async (endpoint, params="", query)=>{
+
+// }

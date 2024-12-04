@@ -210,7 +210,11 @@
       "image": "gift-9",
       "rating": 4.6,
       "productType": "gift"
-    },
+    }
+    
+  ],
+  "shoppingCard":  [
+
     {
       "id": 10,
       "name": "Holiday Wine Glasses",
@@ -222,9 +226,5 @@
       "rating": 4.7,
       "productType": "gift"
     }
-  ],
-  "shoppingCart": {
-    "items": [],
-    "totalPrice": 0.0
-  }
+  ]
 }
