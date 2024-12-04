@@ -22,7 +22,7 @@ export const GiftsPage = () => {
     
 
     result.map((item)=>{
-      const {id, name, style, price, stock, rating,image, productType}: IProduct = item;
+      const {id, name, style, price, stock, rating,image}: IProduct = item;
       const product : IProduct = {
         id,
         name,
