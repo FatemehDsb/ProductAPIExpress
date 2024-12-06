@@ -20,6 +20,7 @@ const app = express();
 
 
 app.use(cors());
+app.use(express.json());
 app.use('/api/decorations', decorationsRoutes);
 app.use('/api/gifts', giftsRoutes);
 app.use('/api/shoppingCard',shoppingCardRoutes);

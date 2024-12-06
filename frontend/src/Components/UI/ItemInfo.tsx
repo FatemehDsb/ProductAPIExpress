@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import AddComponent from "../AddComponent";
+import AddComponent from "../AddShoppingCardComp";
 
 type ItemInfoProps = {
     id:number;

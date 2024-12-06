@@ -1,5 +1,5 @@
 import { IProductDetails } from "../Models/IProductDetails";
-import AddComponent from "./AddComponent";
+import AddComponent from "./AddShoppingCardComp";
 
 type DetailsProp = {
     product: IProductDetails;
