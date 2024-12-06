@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import AddComponent from "../AddShoppingCardComp";
+import AddShoppingCardComp from "../AddShoppingCardComp";
 
 type ItemInfoProps = {
     id:number;
@@ -9,23 +9,21 @@ type ItemInfoProps = {
     stock: number;
     image: string;
     rating: number;
-    productType : string
+    productType : "decoration" | "gift"
+    reloadCart: () => void;
   };
   
-  const ItemInfo = ({ name,id , price, stock, image, rating, productType}: ItemInfoProps) => {
+  const ItemInfo = ({ name,id, style, price, stock, image, rating, productType}: ItemInfoProps) => {
     console.log(`/${productType}s/${id}`);
-    
+    const item = {id, name,style, price, stock, image, rating, productType}
     return (
       <>
       <NavLink  className='card-body' to = {`/${productType}s/${id}`}>
-
           <img  className="product-img" src={`/images/${image}.jpg`} alt={name} />
-          
-         
+
               <div className="product-title">
                 <h4> {name}</h4>
                 <p>{price} kr</p>
-                
               </div>
 
               <div className="product-detail">
@@ -34,8 +32,11 @@ type ItemInfoProps = {
                     </span>
                   </p>
                   <p>{rating}/5</p>
+
                   <div className="addBtn">
-                      <AddComponent/>
+                    <AddShoppingCardComp item ={item} 
+                     reloadCart={() => console.log("Reload cart function should be passed")} 
+                     />
                   </div>
               </div>
           

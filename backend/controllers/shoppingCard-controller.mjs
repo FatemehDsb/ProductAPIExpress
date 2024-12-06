@@ -1,24 +1,25 @@
 import { fetchDate } from "../utilities/httpClient.mjs"
 // import { ItemsModel } from "../models/ItemsModel.mjs"
 
-const shoppingCard = [];
+const shoppingCart = [];
 
 export const listShoppingCard = async(req, res) => {
     
-    const  url = `${process.env.BASE_URL}/shoppingCard`;
-    const response = await fetch(url)
-    const data =  await response.json();
+  res.status(200).json({ success: true, result: shoppingCart });
+    // const  url = `${process.env.BASE_URL}/shoppingCard`;
+    // const response = await fetch(url)
+    // const data =  await response.json();
     
-    try {
+    // try {
         
-            res.status(200).json({
-                success : true,
-                result : data,
-            })
-    return;
-    }catch(error){
-        res.status(500).json({success:false, message: error.message})
-    }
+    //         res.status(200).json({
+    //             success : true,
+    //             result : data,
+    //         })
+    // return;
+    // }catch(error){
+    //     res.status(500).json({success:false, message: error.message})
+    // }
 }
 
 export const addShoppingCard = async(req, res)=>{
@@ -35,8 +36,8 @@ export const addShoppingCard = async(req, res)=>{
        }
 
        try {
-        // Mock data addition (or push to an in-memory array or database)
-        shoppingCard.push(newItem);
+     
+        shoppingCart.push(newItem);
     
         res.status(201).json({ success: true, result: newItem });
       } catch (error) {

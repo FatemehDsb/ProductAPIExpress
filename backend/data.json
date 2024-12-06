@@ -210,10 +210,7 @@
       "image": "gift-9",
       "rating": 4.6,
       "productType": "gift"
-    }
-    
-  ],
-  "shoppingCard":  [
+    },
 
     {
       "id": 10,
@@ -226,5 +223,10 @@
       "rating": 4.7,
       "productType": "gift"
     }
+    
+  ],
+  "shoppingCard":  [
+
+    
   ]
 }

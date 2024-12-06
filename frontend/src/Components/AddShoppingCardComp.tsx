@@ -2,9 +2,18 @@ import { IProduct } from "../Models/IProduct";
 import { AddShoppingCard } from "../Utilities/addShoppingCard";
 
 
-const AddShoppingCardComp = ({item, reloadCart} : {item: IProduct ; reloadCart: ()=> void }) => {
+const AddShoppingCardComp = ({
+  item,
+  reloadCart,
+  } : {
+    item: IProduct;
+  reloadCart: ()=> void; 
+}) => {
   const handleAddToCard = async()=>{
+    console.log("clicked on add button");
+    
     try{
+      console.log("Item to add:", item);
       const addedItem = await AddShoppingCard(item);
       console.log("added to cart", addedItem);
       reloadCart();

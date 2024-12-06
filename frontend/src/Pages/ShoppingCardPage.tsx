@@ -2,8 +2,9 @@ import { useEffect, useState } from "react"
 import { IProduct } from "../Models/IProduct"
 
 import Header from "../Components/UI/Header"
-import ShoppingCardItemsList from "../Components/ItemsList"
+
 import { LoadShoppingCard } from "../Utilities/LoadShoppingCard"
+import ShoppingCardItemsList from "../Components/ShoppingCardItemsList"
 
 
 export const ShoppingCardPage = () => {
@@ -15,13 +16,16 @@ export const ShoppingCardPage = () => {
   }, [])
 
   const loadShoppindCard = async()=>{
-    setShoppingCard(await LoadShoppingCard("shoppingCard"))
+    const data= await LoadShoppingCard("shoppingCard")
+    console.log("loaded shopping cart data", data);
+    setShoppingCard(data);
   }
   
   return (
     <>
     <Header title="Your shopping card"/>
-    <ShoppingCardItemsList items= {shoppingCard}/>
+    <ShoppingCardItemsList items={shoppingCard} reloadCart={loadShoppindCard}
+     />
 </>
   )
 }
